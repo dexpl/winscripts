@@ -1,0 +1,4 @@
+perl_deploy.bat	Install Strawberry Perl on Windows.
+termservice.bat	Enable Terminal Server on a Windows host.
+winrm_setup.bat	Set up WinRM on a Windows host.
+xx2en.bat	Rename (some of) built-in Windown users/groups locale-independently.
