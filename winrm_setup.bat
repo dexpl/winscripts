@@ -1,7 +1,7 @@
 @echo off
 
 powershell -NoLogo -Command "& {Set-NetConnectionProfile -NetworkCategory Private}"
-call winrm quickconfig -q -force
+call winrm quickconfig -q -force || call winrm quickconfig -q
 :: https://github.com/ansible/ansible/issues/42978
 reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /f /v LocalAccountTokenFilterPolicy /d 1 /t REG_DWORD
 :: Don't go any further on AD machines
